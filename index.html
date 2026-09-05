@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Telefonhjelp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-area">
+          <span class="app-version" title="Versjon 1.0.3">v1.0.3</span>
+          <a class="brand" href="./index.html" aria-label="Gå til aktive saker">
+            <span class="brand-mark">T</span>
+            <span><strong>Telefonhjelp</strong><small>Butikkstøtte</small></span>
+          </a>
+        </div>
+
+        <nav aria-label="Hovedmeny">
+          <a class="active" href="#">Saker</a>
+          <a href="#">Rapporter</a>
+        </nav>
+
+        <div class="employee-switcher">
+          <label for="current-employee">Nåværende ansatt</label>
+          <select id="current-employee">
+            <option>Ola Nordmann</option>
+            <option>Kari Nordmann</option>
+            <option>Peder Ås</option>
+          </select>
+          <a class="settings-link" href="#">⚙ Ansattinnstillinger</a>
+        </div>
+
+        <button class="exit-button" type="button" title="Avslutt Telefonhjelp">
+          <span aria-hidden="true">⏻</span> Avslutt
+        </button>
+      </header>
+
+      <main class="page page--wide">
+        <section class="workspace-header">
+          <div>
+            <p class="eyebrow">Arbeidskø</p>
+            <h1>Aktive saker</h1>
+            <p>Få oversikt, finn kunden og fortsett der dere slapp.</p>
+          </div>
+          <a class="button button--primary button--large" href="#"><span>+</span> Ny sak</a>
+        </section>
+
+        <section class="toolbar card">
+          <div class="tabs" role="tablist" aria-label="Saksoversikt">
+            <button class="active" type="button">Aktive saker</button>
+            <button type="button">Tidligere saker</button>
+          </div>
+          <label class="search">
+            <span aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Søk på telefon, navn, saksnummer, enhet eller problem…" aria-label="Søk i saker" />
+          </label>
+        </section>
+
+        <div class="ticket-table card">
+          <table>
+            <thead>
+              <tr>
+                <th>Alder</th>
+                <th>Kunde</th>
+                <th>Enhet</th>
+                <th>Kategori</th>
+                <th>Tildelt</th>
+                <th>Status</th>
+                <th><span class="sr-only">Åpne</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="urgent">
+                <td>
+                  <span class="age age--red"><i class="age-dot"></i><strong>1t 18m</strong><small>Haster</small></span>
+                </td>
+                <td><strong>Mona Eriksen</strong><small>41 20 98 76</small></td>
+                <td><strong>Google Pixel 9</strong><small>Sak #203</small></td>
+                <td>App-problemer</td>
+                <td>Peder Ås</td>
+                <td><span class="status status--escalated">Eskalert</span></td>
+                <td><a class="icon-button" href="#" aria-label="Åpne sak 203">→</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="age age--yellow"><i class="age-dot"></i><strong>43m</strong></span>
+                </td>
+                <td><strong>Thomas Berg</strong><small>98 04 42 21</small></td>
+                <td><strong>Samsung Galaxy S24</strong><small>Sak #202</small></td>
+                <td>Konto / brukernavn / passord</td>
+                <td>Kari Nordmann</td>
+                <td><span class="status status--waiting">Venter</span></td>
+                <td><a class="icon-button" href="#" aria-label="Åpne sak 202">→</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="age age--green"><i class="age-dot"></i><strong>25m</strong></span>
+                </td>
+                <td><strong>Ahmed Ali</strong><small>46 53 01 12</small></td>
+                <td><strong>Lenovo ThinkPad T14</strong><small>Sak #204</small></td>
+                <td>E-post</td>
+                <td>Kari Nordmann</td>
+                <td><span class="status status--in-progress">Pågår</span></td>
+                <td><a class="icon-button" href="#" aria-label="Åpne sak 204">→</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="age age--green"><i class="age-dot"></i><strong>12m</strong></span>
+                </td>
+                <td><strong>Ingrid Larsen</strong><small>99 12 34 56</small></td>
+                <td><strong>iPhone 15 Pro</strong><small>Sak #201</small></td>
+                <td>Dataoverføring / sikkerhetskopi / oppsett</td>
+                <td>Ola Nordmann</td>
+                <td><span class="status status--in-progress">Pågår</span></td>
+                <td><a class="icon-button" href="#" aria-label="Åpne sak 201">→</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

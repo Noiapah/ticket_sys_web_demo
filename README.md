@@ -1,47 +1,26 @@
-# Telefonhjelp – nettbasert demo
+# Telefonhjelp – statisk UI-demo
 
-Dette repositoriet inneholder en frontend-only demonstrasjon av Telefonhjelp, et norskspråklig supportsystem for en telefonbutikk. Løsningen er bygget med Vue 3, TypeScript og Vite, og kan publiseres direkte på GitHub Pages.
+Dette repositoriet er en statisk forhåndsvisning av Telefonhjelp-grensesnittet. Det finnes ingen backend, database, byggeverktøy eller lokal server.
 
-Demoen har ingen database eller backend. Eksempeldata lastes fra `frontend/src/data/mock-data.json`, kopieres til minnet når siden åpnes og nullstilles når nettleseren oppdateres. Ikke legg inn ekte kundeopplysninger.
+## Åpne demoen
 
-## Lokal utvikling
+1. Last ned eller klon repositoriet.
+2. Dobbeltklikk på `index.html`.
 
-Forutsetning: Node.js 24.
+Siden åpnes direkte i nettleseren. Ingen installasjon eller kommandoer er nødvendig.
 
-```powershell
-npm ci
-npm run dev
-```
+## Filer
 
-Vite viser den lokale adressen i terminalen. Appen bruker basebanen `/ticket_sys_web_demo/`, den samme som på GitHub Pages.
+- `index.html` inneholder den statiske visningen.
+- `styles.css` gjenskaper utseendet fra originalprosjektet.
+- `mock-data.json` inneholder illustrasjonsdata med fire ansatte og seks supportsaker.
 
-## Kontroller og produksjonsbygg
-
-```powershell
-npm test
-npm run typecheck
-npm run build
-npm run preview
-```
-
-Produksjonsbygget legges i `dist/`. Denne mappen er generert og skal ikke legges inn i Git.
-
-## Demodata
-
-JSON-filen inneholder fire ansatte og seks supportsaker. Ola Nordmann, Kari Nordmann og Peder Ås er aktive. Jan Johansen er deaktivert, men er beholdt i historikken på en tidligere sak.
-
-Aktive saker, lukkede saker, søk, kommentarer, statusendringer, tildeling, ansattinnstillinger og midlertidige demoverdier fungerer i den åpne nettleserøkten. Alle endringer forsvinner ved oppdatering av siden.
+Knappene og feltene er visuelle elementer og trenger ikke å utføre handlinger. Ola Nordmann, Kari Nordmann og Peder Ås er aktive ansatte. Jan Johansen er deaktivert og finnes fortsatt i historiske demodata.
 
 ## GitHub Pages
 
-Arbeidsflyten i `.github/workflows/deploy-pages.yml` tester, bygger og publiserer `dist/` ved push til `main`. Den kan også startes manuelt fra fanen **Actions**.
+`.github/workflows/deploy-pages.yml` publiserer de statiske filene direkte ved push til `main`.
 
-Før første publisering:
-
-1. Åpne **Settings → Pages** i GitHub-repositoriet.
-2. Velg **GitHub Actions** under **Build and deployment → Source**.
-3. Push til `main`, eller start arbeidsflyten manuelt.
-
-Nettsiden blir tilgjengelig på:
+Før første publisering åpner du **Settings → Pages** på GitHub og velger **GitHub Actions** som kilde. Siden blir deretter tilgjengelig på:
 
 `https://noiapah.github.io/ticket_sys_web_demo/`
