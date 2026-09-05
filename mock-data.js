@@ -1,0 +1,323 @@
+window.MOCK_DATA = {
+  "currentEmployeeId": 1,
+  "employees": [
+    { "id": 1, "name": "Ola Nordmann", "active": true },
+    { "id": 2, "name": "Kari Nordmann", "active": true },
+    { "id": 3, "name": "Peder Ås", "active": true },
+    { "id": 4, "name": "Jan Johansen", "active": false }
+  ],
+  "tickets": [
+    {
+      "id": 201,
+      "version": 3,
+      "customerName": "Ingrid Larsen",
+      "customerPhone": "991 23 456",
+      "customerPhoneNormalized": "+4799123456",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 15 Pro",
+      "newDeviceModel": "iPhone 17 Pro",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Flytt bilder, meldinger og BankID til kundens nye iPhone.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "IN_PROGRESS",
+      "urgent": false,
+      "createdMinutesAgo": 12,
+      "updatedMinutesAgo": 5,
+      "comments": [
+        {
+          "id": 1,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Sikkerhetskopien er ferdig. Starter overføring til ny telefon.",
+          "minutesAgo": 5
+        }
+      ],
+      "history": [
+        {
+          "id": 1,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 12
+        },
+        {
+          "id": 2,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Status satt til Pågår",
+          "minutesAgo": 12
+        },
+        {
+          "id": 3,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 5
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "version": 3,
+      "customerName": "Thomas Berg",
+      "customerPhone": "980 44 221",
+      "customerPhoneNormalized": "+4798044221",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S24",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden kommer ikke inn på Google-kontoen etter passordbytte.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "WAITING",
+      "urgent": false,
+      "createdMinutesAgo": 43,
+      "updatedMinutesAgo": 8,
+      "comments": [
+        {
+          "id": 2,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Venter på at kunden finner gjenopprettingskoden hjemme.",
+          "minutesAgo": 8
+        }
+      ],
+      "history": [
+        {
+          "id": 4,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 43
+        },
+        {
+          "id": 5,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Venter",
+          "minutesAgo": 10
+        },
+        {
+          "id": 6,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 8
+        }
+      ]
+    },
+    {
+      "id": 203,
+      "version": 3,
+      "customerName": "Mona Eriksen",
+      "customerPhone": "412 09 876",
+      "customerPhoneNormalized": "+4741209876",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "BankID stopper under aktivering og viser en ukjent feilkode.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "ESCALATED",
+      "urgent": true,
+      "createdMinutesAgo": 78,
+      "updatedMinutesAgo": 3,
+      "comments": [],
+      "history": [
+        {
+          "id": 7,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 78
+        },
+        {
+          "id": 8,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 4
+        },
+        {
+          "id": 9,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "URGENT",
+          "summary": "Markert som haster",
+          "minutesAgo": 3
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "version": 3,
+      "customerName": "Ahmed Ali",
+      "customerPhone": "465 30 112",
+      "customerPhoneNormalized": "+4746530112",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "Outlook mottar e-post, men sender ikke fra butikkens nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "IN_PROGRESS",
+      "urgent": false,
+      "createdMinutesAgo": 25,
+      "updatedMinutesAgo": 10,
+      "comments": [
+        {
+          "id": 3,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Kontrollerer SMTP-innstillinger og tester på mobilnett.",
+          "minutesAgo": 10
+        }
+      ],
+      "history": [
+        {
+          "id": 10,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 25
+        },
+        {
+          "id": 11,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "ASSIGNED",
+          "summary": "Tildelt endret: Peder Ås → Kari Nordmann",
+          "minutesAgo": 18
+        },
+        {
+          "id": 12,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 10
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "version": 2,
+      "customerName": "Solveig Nilsen",
+      "customerPhone": "930 11 202",
+      "customerPhoneNormalized": "+4793011202",
+      "deviceType": "PHONE",
+      "manufacturer": "Nokia",
+      "deviceModel": "Nokia Button Phone",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Nettverk / tilkobling",
+      "description": "Telefonen kunne ikke ringe etter bytte av SIM-kort.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 2880,
+      "updatedMinutesAgo": 2820,
+      "closedMinutesAgo": 2820,
+      "comments": [
+        {
+          "id": 4,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "SIM-kortet ble aktivert på nytt. Testanrop gjennomført.",
+          "minutesAgo": 2822
+        }
+      ],
+      "history": [
+        {
+          "id": 13,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 2880
+        },
+        {
+          "id": 14,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 2820
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "version": 2,
+      "customerName": "Eirik Moen",
+      "customerPhone": "404 55 880",
+      "customerPhoneNormalized": "+4740455880",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Varslinger og ringelyd var slått av etter en oppdatering.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 7200,
+      "updatedMinutesAgo": 7110,
+      "closedMinutesAgo": 7110,
+      "comments": [],
+      "history": [
+        {
+          "id": 15,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 7200
+        },
+        {
+          "id": 16,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 7110
+        }
+      ]
+    }
+  ]
+};
