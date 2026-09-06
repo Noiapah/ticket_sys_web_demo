@@ -95,8 +95,7 @@
     return digits.length === 8 ? `+47${digits}` : digits.startsWith('47') ? `+${digits}` : digits
   }
   const formatPhone = value => {
-    const digits = String(value).replace(/^\+47/, '').replace(/\D/g, '')
-    return digits.length === 8 ? digits.replace(/(\d{2})(\d{2})(\d{2})(\d{2})/, '$1 $2 $3 $4') : value
+    return value ? '99999999' : value
   }
   const dateTime = value => new Intl.DateTimeFormat('nb-NO', {
     dateStyle: 'short',
@@ -230,7 +229,7 @@
           <fieldset><legend>1. Kategori</legend><label>Hva gjelder saken?<select name="category" required autofocus><option value="" disabled selected>Velg kategori</option>${categories.map(category => `<option>${escapeHtml(category)}</option>`).join('')}</select></label></fieldset>
           <fieldset><legend>2. Enhetstype</legend><div class="choice-grid">${Object.entries(deviceTypeLabels).map(([value, label], index) => `<label class="choice"><input type="radio" name="deviceType" value="${value}"${checked(index === 0)} />${label}</label>`).join('')}</div></fieldset>
           <fieldset><legend>3. Enhet</legend><div class="field-row"><label class="grow">Enhetsmodell<input name="deviceModel" list="device-models" placeholder="Søk, f.eks. ip 15 pro" required /><datalist id="device-models">${deviceModels.map(model => `<option value="${model}"></option>`).join('')}</datalist></label><label class="check other-check"><input type="checkbox" /> Annen modell</label></div><label class="secondary-device-field" data-transfer-field hidden>Enhetsmodell (ny enhet)<input name="newDeviceModel" placeholder="F.eks. iPhone 17 Pro" /></label></fieldset>
-          <fieldset><legend>4. Kunde</legend><div class="two-columns"><label>Telefonnummer<input name="customerPhone" inputmode="tel" placeholder="991 23 456" required /></label><label>Navn<input name="customerName" placeholder="Kundens navn" required /></label></div></fieldset>
+          <fieldset><legend>4. Kunde</legend><div class="two-columns"><label>Telefonnummer<input name="customerPhone" inputmode="tel" placeholder="99999999" required /></label><label>Navn<input name="customerName" placeholder="Kundens navn" required /></label></div></fieldset>
           <fieldset><legend>5. Problem</legend><label>Kort beskrivelse<textarea name="description" rows="3" maxlength="500" placeholder="F.eks. kommer ikke inn på Apple-konto" required></textarea></label></fieldset>
           <div class="form-actions"><a class="button button--ghost" href="#/">Avbryt</a><button class="button button--primary button--large">Opprett sak</button></div>
         </form>
@@ -242,7 +241,7 @@
     if (state.editingTicketId === ticket.id) {
       return `
         <form class="edit-form" data-form="edit-ticket" data-ticket-id="${ticket.id}">
-          <div class="two-columns"><label>Navn<input name="customerName" value="${escapeHtml(ticket.customerName)}" required /></label><label>Telefon<input name="customerPhone" value="${escapeHtml(ticket.customerPhone)}" required /></label></div>
+          <div class="two-columns"><label>Navn<input name="customerName" value="${escapeHtml(ticket.customerName)}" required /></label><label>Telefon<input name="customerPhone" value="${escapeHtml(formatPhone(ticket.customerPhone))}" required /></label></div>
           <label>Enhetsmodell<input name="deviceModel" value="${escapeHtml(ticket.deviceModel)}" required /></label>
           <label>Kategori<select name="category">${categories.map(category => `<option${selected(category, ticket.category)}>${escapeHtml(category)}</option>`).join('')}</select></label>
           <label>Problem<textarea name="description" rows="3" required>${escapeHtml(ticket.description)}</textarea></label>
