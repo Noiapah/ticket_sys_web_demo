@@ -323,28 +323,7 @@
   }
 
   function reportSummary() {
-    const from = new Date(`${state.report.from}T00:00:00`).getTime()
-    const to = new Date(`${state.report.to}T23:59:59`).getTime()
-    const cohort = state.tickets.filter(ticket => {
-      const created = new Date(ticket.createdAt).getTime()
-      return created >= from && created <= to &&
-        (!state.report.employeeId || ticket.assignedToId === Number(state.report.employeeId)) &&
-        (!state.report.category || ticket.category === state.report.category)
-    })
-    const closed = cohort.filter(ticket => ticket.closedAt)
-    const durations = closed.map(ticket => (new Date(ticket.closedAt) - new Date(ticket.createdAt)) / 60_000)
-    const percentage = predicate => durations.length ? Math.round(durations.filter(predicate).length / durations.length * 100) : 0
-    return {
-      created: cohort.length,
-      closed: closed.length,
-      open: cohort.filter(ticket => ticket.status !== 'CLOSED').length,
-      average: durations.length ? Math.round(durations.reduce((sum, value) => sum + value, 0) / durations.length) : 0,
-      within30: percentage(value => value <= 30),
-      within60: percentage(value => value <= 60),
-      over60: percentage(value => value > 60),
-      urgent: cohort.filter(ticket => ticket.urgent).length,
-      escalated: cohort.filter(ticket => ticket.status === 'ESCALATED').length
-    }
+    return window.TelefonhjelpReport.data(state.tickets, state.report).summary
   }
 
   function reportsView() {
@@ -365,8 +344,8 @@
         <button class="button button--ghost" data-action="backup">Sikkerhetskopier data</button>
       </section>
       <form class="card report-filter" data-form="report">
-        <label>Fra<input name="from" type="date" value="${state.report.from}" /></label>
-        <label>Til<input name="to" type="date" value="${state.report.to}" /></label>
+        <label>Fra<input name="from" type="date" required value="${state.report.from}" /></label>
+        <label>Til<input name="to" type="date" required value="${state.report.to}" /></label>
         <label>Ansatt<select name="employeeId"><option value="">Alle</option>${state.employees.map(employee => `<option value="${employee.id}"${selected(employee.id, state.report.employeeId)}>${escapeHtml(employee.name)}</option>`).join('')}</select></label>
         <label>Kategori<select name="category"><option value="">Alle</option>${categories.map(category => `<option${selected(category, state.report.category)}>${escapeHtml(category)}</option>`).join('')}</select></label>
         <button class="button button--primary">Vis rapport</button>
@@ -448,13 +427,14 @@
     } else if (action === 'backup') {
       alert('Sikkerhetskopiering krever ingen handling i denne demoen. Alle data er eksempler.')
     } else if (action === 'export-report') {
-      const summary = reportSummary()
-      const csv = 'Måling,Verdi\n' + Object.entries(summary).map(([key, value]) => `${key},${value}`).join('\n')
       const link = document.createElement('a')
-      link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }))
-      link.download = 'telefonhjelp-demo-rapport.csv'
+      const blob = window.TelefonhjelpReport.workbook(state.tickets, state.employees, state.report)
+      link.href = URL.createObjectURL(blob)
+      link.download = `telefonhjelp-rapport-${state.report.from}-${state.report.to}.xlsx`
+      document.body.appendChild(link)
       link.click()
-      URL.revokeObjectURL(link.href)
+      link.remove()
+      setTimeout(() => URL.revokeObjectURL(link.href), 1000)
     }
   })
 
@@ -552,6 +532,10 @@
       state.credentials[form.dataset.ticketId] = data
       alert('De midlertidige demoverdiene er lagret for denne nettleserøkten.')
     } else if (form.dataset.form === 'report') {
+      if (String(data.from) > String(data.to)) {
+        alert('Fra-dato må være før eller lik til-dato.')
+        return
+      }
       state.report = { from: String(data.from), to: String(data.to), employeeId: String(data.employeeId), category: String(data.category) }
       render()
     }

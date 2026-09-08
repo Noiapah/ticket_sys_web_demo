@@ -1,10 +1,26 @@
 window.MOCK_DATA = {
   "currentEmployeeId": 1,
   "employees": [
-    { "id": 1, "name": "Ola Nordmann", "active": true },
-    { "id": 2, "name": "Kari Nordmann", "active": true },
-    { "id": 3, "name": "Peder Ås", "active": true },
-    { "id": 4, "name": "Jan Johansen", "active": false }
+    {
+      "id": 1,
+      "name": "Ola Nordmann",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Kari Nordmann",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Peder Ås",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "Jan Johansen",
+      "active": false
+    }
   ],
   "tickets": [
     {
@@ -318,6 +334,4381 @@ window.MOCK_DATA = {
           "minutesAgo": 7110
         }
       ]
+    },
+    {
+      "id": 207,
+      "version": 3,
+      "customerName": "Anne Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "IN_PROGRESS",
+      "urgent": false,
+      "createdMinutesAgo": 18,
+      "updatedMinutesAgo": 8,
+      "comments": [
+        {
+          "id": 5,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Feilsøking startet. Følger opp med kunden.",
+          "minutesAgo": 9
+        }
+      ],
+      "history": [
+        {
+          "id": 17,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 18
+        },
+        {
+          "id": 18,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 9
+        },
+        {
+          "id": 19,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Pågår",
+          "minutesAgo": 8
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "version": 3,
+      "customerName": "Bjørn Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "WAITING",
+      "urgent": false,
+      "createdMinutesAgo": 36,
+      "updatedMinutesAgo": 22,
+      "comments": [
+        {
+          "id": 6,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Feilsøking startet. Følger opp med kunden.",
+          "minutesAgo": 23
+        }
+      ],
+      "history": [
+        {
+          "id": 20,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 36
+        },
+        {
+          "id": 21,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 23
+        },
+        {
+          "id": 22,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Venter",
+          "minutesAgo": 22
+        }
+      ]
+    },
+    {
+      "id": 209,
+      "version": 4,
+      "customerName": "Camilla Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "ESCALATED",
+      "urgent": true,
+      "createdMinutesAgo": 95,
+      "updatedMinutesAgo": 77,
+      "comments": [
+        {
+          "id": 7,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Feilsøking startet. Følger opp med kunden.",
+          "minutesAgo": 78
+        }
+      ],
+      "history": [
+        {
+          "id": 23,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 95
+        },
+        {
+          "id": 24,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 78
+        },
+        {
+          "id": 25,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 77
+        },
+        {
+          "id": 26,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "URGENT",
+          "summary": "Markert som haster",
+          "minutesAgo": 77
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "version": 3,
+      "customerName": "Daniel Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "IN_PROGRESS",
+      "urgent": false,
+      "createdMinutesAgo": 185,
+      "updatedMinutesAgo": 163,
+      "comments": [
+        {
+          "id": 8,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Feilsøking startet. Følger opp med kunden.",
+          "minutesAgo": 164
+        }
+      ],
+      "history": [
+        {
+          "id": 27,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 185
+        },
+        {
+          "id": 28,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 164
+        },
+        {
+          "id": 29,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Pågår",
+          "minutesAgo": 163
+        }
+      ]
+    },
+    {
+      "id": 211,
+      "version": 3,
+      "customerName": "Elise Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "WAITING",
+      "urgent": false,
+      "createdMinutesAgo": 1520,
+      "updatedMinutesAgo": 1494,
+      "comments": [
+        {
+          "id": 9,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Feilsøking startet. Følger opp med kunden.",
+          "minutesAgo": 1495
+        }
+      ],
+      "history": [
+        {
+          "id": 30,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1520
+        },
+        {
+          "id": 31,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1495
+        },
+        {
+          "id": 32,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Venter",
+          "minutesAgo": 1494
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "version": 3,
+      "customerName": "Fredrik Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1595,
+      "updatedMinutesAgo": 1470,
+      "closedMinutesAgo": 1470,
+      "comments": [
+        {
+          "id": 10,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 1471
+        }
+      ],
+      "history": [
+        {
+          "id": 33,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1595
+        },
+        {
+          "id": 34,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1471
+        },
+        {
+          "id": 35,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1470
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "version": 3,
+      "customerName": "Grete Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 10242,
+      "updatedMinutesAgo": 10002,
+      "closedMinutesAgo": 10002,
+      "comments": [
+        {
+          "id": 11,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 10003
+        }
+      ],
+      "history": [
+        {
+          "id": 36,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 10242
+        },
+        {
+          "id": 37,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 10003
+        },
+        {
+          "id": 38,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 10002
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "version": 4,
+      "customerName": "Henrik Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 26089,
+      "updatedMinutesAgo": 24529,
+      "closedMinutesAgo": 24529,
+      "comments": [
+        {
+          "id": 12,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 24530
+        }
+      ],
+      "history": [
+        {
+          "id": 39,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 26089
+        },
+        {
+          "id": 40,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 26084
+        },
+        {
+          "id": 41,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 24530
+        },
+        {
+          "id": 42,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 24529
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "version": 3,
+      "customerName": "Ida Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 41936,
+      "updatedMinutesAgo": 41918,
+      "closedMinutesAgo": 41918,
+      "comments": [
+        {
+          "id": 13,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 41919
+        }
+      ],
+      "history": [
+        {
+          "id": 43,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 41936
+        },
+        {
+          "id": 44,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 41919
+        },
+        {
+          "id": 45,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 41918
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "version": 3,
+      "customerName": "Jonas Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 57783,
+      "updatedMinutesAgo": 57758,
+      "closedMinutesAgo": 57758,
+      "comments": [
+        {
+          "id": 14,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 57759
+        }
+      ],
+      "history": [
+        {
+          "id": 46,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 57783
+        },
+        {
+          "id": 47,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 57759
+        },
+        {
+          "id": 48,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 57758
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "version": 3,
+      "customerName": "Kristin Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 73630,
+      "updatedMinutesAgo": 73588,
+      "closedMinutesAgo": 73588,
+      "comments": [
+        {
+          "id": 15,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 73589
+        }
+      ],
+      "history": [
+        {
+          "id": 49,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 73630
+        },
+        {
+          "id": 50,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 73589
+        },
+        {
+          "id": 51,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 73588
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "version": 3,
+      "customerName": "Lars Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 89477,
+      "updatedMinutesAgo": 89419,
+      "closedMinutesAgo": 89419,
+      "comments": [
+        {
+          "id": 16,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 89420
+        }
+      ],
+      "history": [
+        {
+          "id": 52,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 89477
+        },
+        {
+          "id": 53,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 89420
+        },
+        {
+          "id": 54,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 89419
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "version": 3,
+      "customerName": "Maria Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 105324,
+      "updatedMinutesAgo": 105249,
+      "closedMinutesAgo": 105249,
+      "comments": [
+        {
+          "id": 17,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 105250
+        }
+      ],
+      "history": [
+        {
+          "id": 55,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 105324
+        },
+        {
+          "id": 56,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 105250
+        },
+        {
+          "id": 57,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 105249
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "version": 3,
+      "customerName": "Nora Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 121171,
+      "updatedMinutesAgo": 121046,
+      "closedMinutesAgo": 121046,
+      "comments": [
+        {
+          "id": 18,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 121047
+        }
+      ],
+      "history": [
+        {
+          "id": 58,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 121171
+        },
+        {
+          "id": 59,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 121047
+        },
+        {
+          "id": 60,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 121046
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "version": 4,
+      "customerName": "Oskar Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 137018,
+      "updatedMinutesAgo": 136778,
+      "closedMinutesAgo": 136778,
+      "comments": [
+        {
+          "id": 19,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 136779
+        }
+      ],
+      "history": [
+        {
+          "id": 61,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 137018
+        },
+        {
+          "id": 62,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 137013
+        },
+        {
+          "id": 63,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 136779
+        },
+        {
+          "id": 64,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 136778
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "version": 3,
+      "customerName": "Petter Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 152865,
+      "updatedMinutesAgo": 151305,
+      "closedMinutesAgo": 151305,
+      "comments": [
+        {
+          "id": 20,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 151306
+        }
+      ],
+      "history": [
+        {
+          "id": 65,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 152865
+        },
+        {
+          "id": 66,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 151306
+        },
+        {
+          "id": 67,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 151305
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "version": 3,
+      "customerName": "Randi Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 168712,
+      "updatedMinutesAgo": 168694,
+      "closedMinutesAgo": 168694,
+      "comments": [
+        {
+          "id": 21,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 168695
+        }
+      ],
+      "history": [
+        {
+          "id": 68,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 168712
+        },
+        {
+          "id": 69,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 168695
+        },
+        {
+          "id": 70,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 168694
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "version": 3,
+      "customerName": "Sofie Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 184559,
+      "updatedMinutesAgo": 184534,
+      "closedMinutesAgo": 184534,
+      "comments": [
+        {
+          "id": 22,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 184535
+        }
+      ],
+      "history": [
+        {
+          "id": 71,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 184559
+        },
+        {
+          "id": 72,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 184535
+        },
+        {
+          "id": 73,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 184534
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "version": 3,
+      "customerName": "Terje Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 200406,
+      "updatedMinutesAgo": 200364,
+      "closedMinutesAgo": 200364,
+      "comments": [
+        {
+          "id": 23,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 200365
+        }
+      ],
+      "history": [
+        {
+          "id": 74,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 200406
+        },
+        {
+          "id": 75,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 200365
+        },
+        {
+          "id": 76,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 200364
+        }
+      ]
+    },
+    {
+      "id": 226,
+      "version": 3,
+      "customerName": "Vilde Hansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 216253,
+      "updatedMinutesAgo": 216195,
+      "closedMinutesAgo": 216195,
+      "comments": [
+        {
+          "id": 24,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 216196
+        }
+      ],
+      "history": [
+        {
+          "id": 77,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 216253
+        },
+        {
+          "id": 78,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 216196
+        },
+        {
+          "id": 79,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 216195
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "version": 3,
+      "customerName": "Anne Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 232100,
+      "updatedMinutesAgo": 232025,
+      "closedMinutesAgo": 232025,
+      "comments": [
+        {
+          "id": 25,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 232026
+        }
+      ],
+      "history": [
+        {
+          "id": 80,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 232100
+        },
+        {
+          "id": 81,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 232026
+        },
+        {
+          "id": 82,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 232025
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "version": 4,
+      "customerName": "Bjørn Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 247947,
+      "updatedMinutesAgo": 247822,
+      "closedMinutesAgo": 247822,
+      "comments": [
+        {
+          "id": 26,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 247823
+        }
+      ],
+      "history": [
+        {
+          "id": 83,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 247947
+        },
+        {
+          "id": 84,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 247942
+        },
+        {
+          "id": 85,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 247823
+        },
+        {
+          "id": 86,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 247822
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "version": 3,
+      "customerName": "Camilla Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 263794,
+      "updatedMinutesAgo": 263554,
+      "closedMinutesAgo": 263554,
+      "comments": [
+        {
+          "id": 27,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 263555
+        }
+      ],
+      "history": [
+        {
+          "id": 87,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 263794
+        },
+        {
+          "id": 88,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 263555
+        },
+        {
+          "id": 89,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 263554
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "version": 3,
+      "customerName": "Daniel Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 279641,
+      "updatedMinutesAgo": 278081,
+      "closedMinutesAgo": 278081,
+      "comments": [
+        {
+          "id": 28,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 278082
+        }
+      ],
+      "history": [
+        {
+          "id": 90,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 279641
+        },
+        {
+          "id": 91,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 278082
+        },
+        {
+          "id": 92,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 278081
+        }
+      ]
+    },
+    {
+      "id": 231,
+      "version": 3,
+      "customerName": "Elise Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 295488,
+      "updatedMinutesAgo": 295470,
+      "closedMinutesAgo": 295470,
+      "comments": [
+        {
+          "id": 29,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 295471
+        }
+      ],
+      "history": [
+        {
+          "id": 93,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 295488
+        },
+        {
+          "id": 94,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 295471
+        },
+        {
+          "id": 95,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 295470
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "version": 3,
+      "customerName": "Fredrik Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 311335,
+      "updatedMinutesAgo": 311310,
+      "closedMinutesAgo": 311310,
+      "comments": [
+        {
+          "id": 30,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 311311
+        }
+      ],
+      "history": [
+        {
+          "id": 96,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 311335
+        },
+        {
+          "id": 97,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 311311
+        },
+        {
+          "id": 98,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 311310
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "version": 3,
+      "customerName": "Grete Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 327182,
+      "updatedMinutesAgo": 327140,
+      "closedMinutesAgo": 327140,
+      "comments": [
+        {
+          "id": 31,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 327141
+        }
+      ],
+      "history": [
+        {
+          "id": 99,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 327182
+        },
+        {
+          "id": 100,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 327141
+        },
+        {
+          "id": 101,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 327140
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "version": 3,
+      "customerName": "Henrik Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 343029,
+      "updatedMinutesAgo": 342971,
+      "closedMinutesAgo": 342971,
+      "comments": [
+        {
+          "id": 32,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 342972
+        }
+      ],
+      "history": [
+        {
+          "id": 102,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 343029
+        },
+        {
+          "id": 103,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 342972
+        },
+        {
+          "id": 104,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 342971
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "version": 4,
+      "customerName": "Ida Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 358876,
+      "updatedMinutesAgo": 358801,
+      "closedMinutesAgo": 358801,
+      "comments": [
+        {
+          "id": 33,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 358802
+        }
+      ],
+      "history": [
+        {
+          "id": 105,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 358876
+        },
+        {
+          "id": 106,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 358871
+        },
+        {
+          "id": 107,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 358802
+        },
+        {
+          "id": 108,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 358801
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "version": 3,
+      "customerName": "Jonas Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 374723,
+      "updatedMinutesAgo": 374598,
+      "closedMinutesAgo": 374598,
+      "comments": [
+        {
+          "id": 34,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 374599
+        }
+      ],
+      "history": [
+        {
+          "id": 109,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 374723
+        },
+        {
+          "id": 110,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 374599
+        },
+        {
+          "id": 111,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 374598
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "version": 3,
+      "customerName": "Kristin Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 390570,
+      "updatedMinutesAgo": 390330,
+      "closedMinutesAgo": 390330,
+      "comments": [
+        {
+          "id": 35,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 390331
+        }
+      ],
+      "history": [
+        {
+          "id": 112,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 390570
+        },
+        {
+          "id": 113,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 390331
+        },
+        {
+          "id": 114,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 390330
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "version": 3,
+      "customerName": "Lars Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 406417,
+      "updatedMinutesAgo": 404857,
+      "closedMinutesAgo": 404857,
+      "comments": [
+        {
+          "id": 36,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 404858
+        }
+      ],
+      "history": [
+        {
+          "id": 115,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 406417
+        },
+        {
+          "id": 116,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 404858
+        },
+        {
+          "id": 117,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 404857
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "version": 3,
+      "customerName": "Maria Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 422264,
+      "updatedMinutesAgo": 422246,
+      "closedMinutesAgo": 422246,
+      "comments": [
+        {
+          "id": 37,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 422247
+        }
+      ],
+      "history": [
+        {
+          "id": 118,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 422264
+        },
+        {
+          "id": 119,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 422247
+        },
+        {
+          "id": 120,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 422246
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "version": 3,
+      "customerName": "Nora Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 438111,
+      "updatedMinutesAgo": 438086,
+      "closedMinutesAgo": 438086,
+      "comments": [
+        {
+          "id": 38,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 438087
+        }
+      ],
+      "history": [
+        {
+          "id": 121,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 438111
+        },
+        {
+          "id": 122,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 438087
+        },
+        {
+          "id": 123,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 438086
+        }
+      ]
+    },
+    {
+      "id": 241,
+      "version": 3,
+      "customerName": "Oskar Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 453958,
+      "updatedMinutesAgo": 453916,
+      "closedMinutesAgo": 453916,
+      "comments": [
+        {
+          "id": 39,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 453917
+        }
+      ],
+      "history": [
+        {
+          "id": 124,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 453958
+        },
+        {
+          "id": 125,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 453917
+        },
+        {
+          "id": 126,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 453916
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "version": 4,
+      "customerName": "Petter Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 469805,
+      "updatedMinutesAgo": 469747,
+      "closedMinutesAgo": 469747,
+      "comments": [
+        {
+          "id": 40,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 469748
+        }
+      ],
+      "history": [
+        {
+          "id": 127,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 469805
+        },
+        {
+          "id": 128,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 469800
+        },
+        {
+          "id": 129,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 469748
+        },
+        {
+          "id": 130,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 469747
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "version": 3,
+      "customerName": "Randi Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 485652,
+      "updatedMinutesAgo": 485577,
+      "closedMinutesAgo": 485577,
+      "comments": [
+        {
+          "id": 41,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 485578
+        }
+      ],
+      "history": [
+        {
+          "id": 131,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 485652
+        },
+        {
+          "id": 132,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 485578
+        },
+        {
+          "id": 133,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 485577
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "version": 3,
+      "customerName": "Sofie Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 501499,
+      "updatedMinutesAgo": 501374,
+      "closedMinutesAgo": 501374,
+      "comments": [
+        {
+          "id": 42,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 501375
+        }
+      ],
+      "history": [
+        {
+          "id": 134,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 501499
+        },
+        {
+          "id": 135,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 501375
+        },
+        {
+          "id": 136,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 501374
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "version": 3,
+      "customerName": "Terje Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 517346,
+      "updatedMinutesAgo": 517106,
+      "closedMinutesAgo": 517106,
+      "comments": [
+        {
+          "id": 43,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 517107
+        }
+      ],
+      "history": [
+        {
+          "id": 137,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 517346
+        },
+        {
+          "id": 138,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 517107
+        },
+        {
+          "id": 139,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 517106
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "version": 3,
+      "customerName": "Vilde Johansen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 533193,
+      "updatedMinutesAgo": 531633,
+      "closedMinutesAgo": 531633,
+      "comments": [
+        {
+          "id": 44,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 531634
+        }
+      ],
+      "history": [
+        {
+          "id": 140,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 533193
+        },
+        {
+          "id": 141,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 531634
+        },
+        {
+          "id": 142,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 531633
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "version": 3,
+      "customerName": "Anne Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 549040,
+      "updatedMinutesAgo": 549022,
+      "closedMinutesAgo": 549022,
+      "comments": [
+        {
+          "id": 45,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 549023
+        }
+      ],
+      "history": [
+        {
+          "id": 143,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 549040
+        },
+        {
+          "id": 144,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 549023
+        },
+        {
+          "id": 145,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 549022
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "version": 3,
+      "customerName": "Bjørn Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 564887,
+      "updatedMinutesAgo": 564862,
+      "closedMinutesAgo": 564862,
+      "comments": [
+        {
+          "id": 46,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 564863
+        }
+      ],
+      "history": [
+        {
+          "id": 146,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 564887
+        },
+        {
+          "id": 147,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 564863
+        },
+        {
+          "id": 148,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 564862
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "version": 4,
+      "customerName": "Camilla Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 580734,
+      "updatedMinutesAgo": 580692,
+      "closedMinutesAgo": 580692,
+      "comments": [
+        {
+          "id": 47,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 580693
+        }
+      ],
+      "history": [
+        {
+          "id": 149,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 580734
+        },
+        {
+          "id": 150,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 580729
+        },
+        {
+          "id": 151,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 580693
+        },
+        {
+          "id": 152,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 580692
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "version": 3,
+      "customerName": "Daniel Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 596581,
+      "updatedMinutesAgo": 596523,
+      "closedMinutesAgo": 596523,
+      "comments": [
+        {
+          "id": 48,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 596524
+        }
+      ],
+      "history": [
+        {
+          "id": 153,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 596581
+        },
+        {
+          "id": 154,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 596524
+        },
+        {
+          "id": 155,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 596523
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "version": 3,
+      "customerName": "Elise Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 612428,
+      "updatedMinutesAgo": 612353,
+      "closedMinutesAgo": 612353,
+      "comments": [
+        {
+          "id": 49,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 612354
+        }
+      ],
+      "history": [
+        {
+          "id": 156,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 612428
+        },
+        {
+          "id": 157,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 612354
+        },
+        {
+          "id": 158,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 612353
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "version": 3,
+      "customerName": "Fredrik Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 628275,
+      "updatedMinutesAgo": 628150,
+      "closedMinutesAgo": 628150,
+      "comments": [
+        {
+          "id": 50,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 628151
+        }
+      ],
+      "history": [
+        {
+          "id": 159,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 628275
+        },
+        {
+          "id": 160,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 628151
+        },
+        {
+          "id": 161,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 628150
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "version": 3,
+      "customerName": "Grete Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 644122,
+      "updatedMinutesAgo": 643882,
+      "closedMinutesAgo": 643882,
+      "comments": [
+        {
+          "id": 51,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 643883
+        }
+      ],
+      "history": [
+        {
+          "id": 162,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 644122
+        },
+        {
+          "id": 163,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 643883
+        },
+        {
+          "id": 164,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 643882
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "version": 3,
+      "customerName": "Henrik Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 659969,
+      "updatedMinutesAgo": 658409,
+      "closedMinutesAgo": 658409,
+      "comments": [
+        {
+          "id": 52,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 658410
+        }
+      ],
+      "history": [
+        {
+          "id": 165,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 659969
+        },
+        {
+          "id": 166,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 658410
+        },
+        {
+          "id": 167,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 658409
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "version": 3,
+      "customerName": "Ida Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 675816,
+      "updatedMinutesAgo": 675798,
+      "closedMinutesAgo": 675798,
+      "comments": [
+        {
+          "id": 53,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 675799
+        }
+      ],
+      "history": [
+        {
+          "id": 168,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 675816
+        },
+        {
+          "id": 169,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 675799
+        },
+        {
+          "id": 170,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 675798
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "version": 4,
+      "customerName": "Jonas Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 691663,
+      "updatedMinutesAgo": 691638,
+      "closedMinutesAgo": 691638,
+      "comments": [
+        {
+          "id": 54,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 691639
+        }
+      ],
+      "history": [
+        {
+          "id": 171,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 691663
+        },
+        {
+          "id": 172,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 691658
+        },
+        {
+          "id": 173,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 691639
+        },
+        {
+          "id": 174,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 691638
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "version": 3,
+      "customerName": "Kristin Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 707510,
+      "updatedMinutesAgo": 707468,
+      "closedMinutesAgo": 707468,
+      "comments": [
+        {
+          "id": 55,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 707469
+        }
+      ],
+      "history": [
+        {
+          "id": 175,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 707510
+        },
+        {
+          "id": 176,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 707469
+        },
+        {
+          "id": 177,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 707468
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "version": 3,
+      "customerName": "Lars Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 723357,
+      "updatedMinutesAgo": 723299,
+      "closedMinutesAgo": 723299,
+      "comments": [
+        {
+          "id": 56,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 723300
+        }
+      ],
+      "history": [
+        {
+          "id": 178,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 723357
+        },
+        {
+          "id": 179,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 723300
+        },
+        {
+          "id": 180,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 723299
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "version": 3,
+      "customerName": "Maria Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 739204,
+      "updatedMinutesAgo": 739129,
+      "closedMinutesAgo": 739129,
+      "comments": [
+        {
+          "id": 57,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 739130
+        }
+      ],
+      "history": [
+        {
+          "id": 181,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 739204
+        },
+        {
+          "id": 182,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 739130
+        },
+        {
+          "id": 183,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 739129
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "version": 3,
+      "customerName": "Nora Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 755051,
+      "updatedMinutesAgo": 754926,
+      "closedMinutesAgo": 754926,
+      "comments": [
+        {
+          "id": 58,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 754927
+        }
+      ],
+      "history": [
+        {
+          "id": 184,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 755051
+        },
+        {
+          "id": 185,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 754927
+        },
+        {
+          "id": 186,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 754926
+        }
+      ]
+    },
+    {
+      "id": 261,
+      "version": 3,
+      "customerName": "Oskar Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 770898,
+      "updatedMinutesAgo": 770658,
+      "closedMinutesAgo": 770658,
+      "comments": [
+        {
+          "id": 59,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 770659
+        }
+      ],
+      "history": [
+        {
+          "id": 187,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 770898
+        },
+        {
+          "id": 188,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 770659
+        },
+        {
+          "id": 189,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 770658
+        }
+      ]
+    },
+    {
+      "id": 262,
+      "version": 3,
+      "customerName": "Petter Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 786745,
+      "updatedMinutesAgo": 785185,
+      "closedMinutesAgo": 785185,
+      "comments": [
+        {
+          "id": 60,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 785186
+        }
+      ],
+      "history": [
+        {
+          "id": 190,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 786745
+        },
+        {
+          "id": 191,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 785186
+        },
+        {
+          "id": 192,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 785185
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "version": 4,
+      "customerName": "Randi Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 802592,
+      "updatedMinutesAgo": 802574,
+      "closedMinutesAgo": 802574,
+      "comments": [
+        {
+          "id": 61,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 802575
+        }
+      ],
+      "history": [
+        {
+          "id": 193,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 802592
+        },
+        {
+          "id": 194,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 802587
+        },
+        {
+          "id": 195,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 802575
+        },
+        {
+          "id": 196,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 802574
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "version": 3,
+      "customerName": "Sofie Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 818439,
+      "updatedMinutesAgo": 818414,
+      "closedMinutesAgo": 818414,
+      "comments": [
+        {
+          "id": 62,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 818415
+        }
+      ],
+      "history": [
+        {
+          "id": 197,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 818439
+        },
+        {
+          "id": 198,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 818415
+        },
+        {
+          "id": 199,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 818414
+        }
+      ]
+    },
+    {
+      "id": 265,
+      "version": 3,
+      "customerName": "Terje Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 834286,
+      "updatedMinutesAgo": 834244,
+      "closedMinutesAgo": 834244,
+      "comments": [
+        {
+          "id": 63,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 834245
+        }
+      ],
+      "history": [
+        {
+          "id": 200,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 834286
+        },
+        {
+          "id": 201,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 834245
+        },
+        {
+          "id": 202,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 834244
+        }
+      ]
+    },
+    {
+      "id": 266,
+      "version": 3,
+      "customerName": "Vilde Olsen",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 850133,
+      "updatedMinutesAgo": 850075,
+      "closedMinutesAgo": 850075,
+      "comments": [
+        {
+          "id": 64,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 850076
+        }
+      ],
+      "history": [
+        {
+          "id": 203,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 850133
+        },
+        {
+          "id": 204,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 850076
+        },
+        {
+          "id": 205,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 850075
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "version": 3,
+      "customerName": "Anne Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 865980,
+      "updatedMinutesAgo": 865905,
+      "closedMinutesAgo": 865905,
+      "comments": [
+        {
+          "id": 65,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 865906
+        }
+      ],
+      "history": [
+        {
+          "id": 206,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 865980
+        },
+        {
+          "id": 207,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 865906
+        },
+        {
+          "id": 208,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 865905
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "version": 3,
+      "customerName": "Bjørn Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 881827,
+      "updatedMinutesAgo": 881702,
+      "closedMinutesAgo": 881702,
+      "comments": [
+        {
+          "id": 66,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 881703
+        }
+      ],
+      "history": [
+        {
+          "id": 209,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 881827
+        },
+        {
+          "id": 210,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 881703
+        },
+        {
+          "id": 211,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 881702
+        }
+      ]
+    },
+    {
+      "id": 269,
+      "version": 3,
+      "customerName": "Camilla Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 897674,
+      "updatedMinutesAgo": 897434,
+      "closedMinutesAgo": 897434,
+      "comments": [
+        {
+          "id": 67,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 897435
+        }
+      ],
+      "history": [
+        {
+          "id": 212,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 897674
+        },
+        {
+          "id": 213,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 897435
+        },
+        {
+          "id": 214,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 897434
+        }
+      ]
+    },
+    {
+      "id": 270,
+      "version": 4,
+      "customerName": "Daniel Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 913521,
+      "updatedMinutesAgo": 911961,
+      "closedMinutesAgo": 911961,
+      "comments": [
+        {
+          "id": 68,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 911962
+        }
+      ],
+      "history": [
+        {
+          "id": 215,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 913521
+        },
+        {
+          "id": 216,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 913516
+        },
+        {
+          "id": 217,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 911962
+        },
+        {
+          "id": 218,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 911961
+        }
+      ]
+    },
+    {
+      "id": 271,
+      "version": 3,
+      "customerName": "Elise Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 929368,
+      "updatedMinutesAgo": 929350,
+      "closedMinutesAgo": 929350,
+      "comments": [
+        {
+          "id": 69,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 929351
+        }
+      ],
+      "history": [
+        {
+          "id": 219,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 929368
+        },
+        {
+          "id": 220,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 929351
+        },
+        {
+          "id": 221,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 929350
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "version": 3,
+      "customerName": "Fredrik Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 945215,
+      "updatedMinutesAgo": 945190,
+      "closedMinutesAgo": 945190,
+      "comments": [
+        {
+          "id": 70,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 945191
+        }
+      ],
+      "history": [
+        {
+          "id": 222,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 945215
+        },
+        {
+          "id": 223,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 945191
+        },
+        {
+          "id": 224,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 945190
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "version": 3,
+      "customerName": "Grete Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy S23",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Konto / brukernavn / passord",
+      "description": "Kunden trenger hjelp med gjenoppretting av konto.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 961062,
+      "updatedMinutesAgo": 961020,
+      "closedMinutesAgo": 961020,
+      "comments": [
+        {
+          "id": 71,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Kontotilgang gjenopprettet og bekreftet av kunden.",
+          "minutesAgo": 961021
+        }
+      ],
+      "history": [
+        {
+          "id": 225,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 961062
+        },
+        {
+          "id": 226,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 961021
+        },
+        {
+          "id": 227,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 961020
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "version": 3,
+      "customerName": "Henrik Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "Lenovo",
+      "deviceModel": "Lenovo ThinkPad T14",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "E-post",
+      "description": "E-post synkroniseres ikke på datamaskinen.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 976909,
+      "updatedMinutesAgo": 976851,
+      "closedMinutesAgo": 976851,
+      "comments": [
+        {
+          "id": 72,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "E-postkonto satt opp på nytt og sending testet.",
+          "minutesAgo": 976852
+        }
+      ],
+      "history": [
+        {
+          "id": 228,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 976909
+        },
+        {
+          "id": 229,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 976852
+        },
+        {
+          "id": 230,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 976851
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "version": 3,
+      "customerName": "Ida Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "COMPUTER",
+      "manufacturer": "HP",
+      "deviceModel": "HP Pavilion 15",
+      "newDeviceModel": "",
+      "operatingSystem": "OTHER",
+      "category": "Virus / skadevare",
+      "description": "Nettleseren viser uønskede varsler og reklame.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 992756,
+      "updatedMinutesAgo": 992681,
+      "closedMinutesAgo": 992681,
+      "comments": [
+        {
+          "id": 73,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Uønskede utvidelser fjernet og sikkerhetsskann fullført.",
+          "minutesAgo": 992682
+        }
+      ],
+      "history": [
+        {
+          "id": 231,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 992756
+        },
+        {
+          "id": 232,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 992682
+        },
+        {
+          "id": 233,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 992681
+        }
+      ]
+    },
+    {
+      "id": 276,
+      "version": 3,
+      "customerName": "Jonas Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Google",
+      "deviceModel": "Google Pixel 7",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "App-problemer",
+      "description": "En app avsluttes ved oppstart.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1008603,
+      "updatedMinutesAgo": 1008478,
+      "closedMinutesAgo": 1008478,
+      "comments": [
+        {
+          "id": 74,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Appen oppdatert og funksjonen testet sammen med kunden.",
+          "minutesAgo": 1008479
+        }
+      ],
+      "history": [
+        {
+          "id": 234,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1008603
+        },
+        {
+          "id": 235,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1008479
+        },
+        {
+          "id": 236,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1008478
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "version": 4,
+      "customerName": "Kristin Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Doro",
+      "deviceModel": "Doro Smartphone",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Systemproblemer",
+      "description": "Telefonen er treg og har lite ledig lagringsplass.",
+      "createdById": 4,
+      "createdByName": "Jan Johansen",
+      "assignedToId": 4,
+      "assignedToName": "Jan Johansen",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1024450,
+      "updatedMinutesAgo": 1024210,
+      "closedMinutesAgo": 1024210,
+      "comments": [
+        {
+          "id": 75,
+          "employeeId": 4,
+          "employeeName": "Jan Johansen",
+          "text": "Lagring ryddet og systemoppdatering fullført.",
+          "minutesAgo": 1024211
+        }
+      ],
+      "history": [
+        {
+          "id": 237,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1024450
+        },
+        {
+          "id": 238,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "STATUS",
+          "summary": "Pågår → Eskalert",
+          "minutesAgo": 1024445
+        },
+        {
+          "id": 239,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1024211
+        },
+        {
+          "id": 240,
+          "actorEmployeeId": 4,
+          "actorName": "Jan Johansen",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1024210
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "version": 3,
+      "customerName": "Lars Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "SMARTWATCH",
+      "manufacturer": "Apple",
+      "deviceModel": "Apple Watch Series 8",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Annet",
+      "description": "Kunden ønsker hjelp med innstillinger på klokken.",
+      "createdById": 1,
+      "createdByName": "Ola Nordmann",
+      "assignedToId": 1,
+      "assignedToName": "Ola Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1040297,
+      "updatedMinutesAgo": 1038737,
+      "closedMinutesAgo": 1038737,
+      "comments": [
+        {
+          "id": 76,
+          "employeeId": 1,
+          "employeeName": "Ola Nordmann",
+          "text": "Innstillinger gjennomgått og tilpasset med kunden.",
+          "minutesAgo": 1038738
+        }
+      ],
+      "history": [
+        {
+          "id": 241,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1040297
+        },
+        {
+          "id": 242,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1038738
+        },
+        {
+          "id": 243,
+          "actorEmployeeId": 1,
+          "actorName": "Ola Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1038737
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "version": 3,
+      "customerName": "Maria Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "PHONE",
+      "manufacturer": "Apple",
+      "deviceModel": "iPhone 13",
+      "newDeviceModel": "",
+      "operatingSystem": "IOS",
+      "category": "Dataoverføring / sikkerhetskopi / oppsett",
+      "description": "Kunden trenger hjelp med sikkerhetskopi og oppsett.",
+      "createdById": 2,
+      "createdByName": "Kari Nordmann",
+      "assignedToId": 2,
+      "assignedToName": "Kari Nordmann",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1056144,
+      "updatedMinutesAgo": 1056126,
+      "closedMinutesAgo": 1056126,
+      "comments": [
+        {
+          "id": 77,
+          "employeeId": 2,
+          "employeeName": "Kari Nordmann",
+          "text": "Sikkerhetskopi kontrollert og oppsett fullført.",
+          "minutesAgo": 1056127
+        }
+      ],
+      "history": [
+        {
+          "id": 244,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1056144
+        },
+        {
+          "id": 245,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1056127
+        },
+        {
+          "id": 246,
+          "actorEmployeeId": 2,
+          "actorName": "Kari Nordmann",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1056126
+        }
+      ]
+    },
+    {
+      "id": 280,
+      "version": 3,
+      "customerName": "Nora Bakken",
+      "customerPhone": "99999999",
+      "customerPhoneNormalized": "99999999",
+      "deviceType": "TABLET",
+      "manufacturer": "Samsung",
+      "deviceModel": "Samsung Galaxy Tab S9",
+      "newDeviceModel": "",
+      "operatingSystem": "ANDROID",
+      "category": "Nettverk / tilkobling",
+      "description": "Nettbrettet mister forbindelsen til trådløst nettverk.",
+      "createdById": 3,
+      "createdByName": "Peder Ås",
+      "assignedToId": 3,
+      "assignedToName": "Peder Ås",
+      "status": "CLOSED",
+      "urgent": false,
+      "createdMinutesAgo": 1071991,
+      "updatedMinutesAgo": 1071966,
+      "closedMinutesAgo": 1071966,
+      "comments": [
+        {
+          "id": 78,
+          "employeeId": 3,
+          "employeeName": "Peder Ås",
+          "text": "Nettverksinnstillinger nullstilt og tilkobling testet.",
+          "minutesAgo": 1071967
+        }
+      ],
+      "history": [
+        {
+          "id": 247,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CREATED",
+          "summary": "Saken ble opprettet",
+          "minutesAgo": 1071991
+        },
+        {
+          "id": 248,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "COMMENT",
+          "summary": "Kommentar lagt til",
+          "minutesAgo": 1071967
+        },
+        {
+          "id": 249,
+          "actorEmployeeId": 3,
+          "actorName": "Peder Ås",
+          "eventType": "CLOSED",
+          "summary": "Pågår → Lukket",
+          "minutesAgo": 1071966
+        }
+      ]
     }
   ]
-};
+}
