@@ -74,6 +74,7 @@
       category: ''
     }
   }
+  let hasAcceptedDisclaimer = false
 
   let nextTicketId = Math.max(...state.tickets.map(ticket => ticket.id)) + 1
   let nextCommentId = Math.max(...state.tickets.flatMap(ticket => ticket.comments.map(comment => comment.id)), 0) + 1
@@ -167,6 +168,30 @@
           ${content}
         </main>
       </div>
+    `
+  }
+
+  function disclaimerView() {
+    return `
+      <main class="disclaimer-page">
+        <section class="card disclaimer-card" aria-labelledby="disclaimer-title">
+          <div class="disclaimer-brand" aria-hidden="true">T</div>
+          <p class="eyebrow">Telefonhjelp</p>
+          <h1 id="disclaimer-title">Viktig før du fortsetter</h1>
+          <p class="disclaimer-intro" id="disclaimer-description">Dette systemet lagrer ingen data utenfor den nåværende økten. Alle opplysninger og endringer forsvinner når siden lastes inn på nytt eller fanen lukkes.</p>
+          <div class="disclaimer-warning" role="note">
+            <strong>Dette er kun en demo.</strong>
+            <p>Ikke legg inn ekte kundeopplysninger, passord eller annen sensitiv informasjon.</p>
+          </div>
+          <form data-form="disclaimer">
+            <label class="disclaimer-consent">
+              <input type="checkbox" name="accepted" required data-action="disclaimer-consent" aria-describedby="disclaimer-description" />
+              <span>Jeg forstår at dette kun er en demo, og at ingen data lagres etter denne økten.</span>
+            </label>
+            <button class="button button--primary button--large button--block" disabled data-disclaimer-submit>Fortsett til demoen</button>
+          </form>
+        </section>
+      </main>
     `
   }
 
@@ -366,6 +391,11 @@
   }
 
   function render() {
+    if (!hasAcceptedDisclaimer) {
+      root.innerHTML = disclaimerView()
+      window.scrollTo(0, 0)
+      return
+    }
     const route = parseRoute()
     root.innerHTML =
       route.name === 'ticket' ? ticketView(route.id) :
@@ -441,7 +471,10 @@
   document.addEventListener('change', event => {
     const target = event.target
     const action = target.dataset.action
-    if (action === 'current-employee') {
+    if (action === 'disclaimer-consent') {
+      const submit = target.form.querySelector('[data-disclaimer-submit]')
+      submit.disabled = !target.checked
+    } else if (action === 'current-employee') {
       state.currentEmployeeId = Number(target.value)
       render()
     } else if (target.name === 'category' && target.closest('[data-form=new-ticket]')) {
@@ -475,7 +508,11 @@
     if (!form.dataset.form) return
     event.preventDefault()
     const data = Object.fromEntries(new FormData(form))
-    if (form.dataset.form === 'new-ticket') {
+    if (form.dataset.form === 'disclaimer') {
+      if (!form.reportValidity()) return
+      hasAcceptedDisclaimer = true
+      render()
+    } else if (form.dataset.form === 'new-ticket') {
       const actor = currentEmployee()
       const now = new Date().toISOString()
       const deviceModel = String(data.deviceModel)

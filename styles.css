@@ -202,6 +202,88 @@ nav a.active {
   box-shadow: 0 4px 16px rgba(39, 58, 45, 0.045);
 }
 
+.disclaimer-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 18px;
+  background:
+    radial-gradient(circle at top left, rgba(232, 216, 138, 0.24), transparent 34rem),
+    #f4f6f1;
+}
+
+.disclaimer-card {
+  width: min(100%, 590px);
+  padding: 38px;
+}
+
+.disclaimer-brand {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  color: #263329;
+  background: #e8d88a;
+  border-radius: 13px;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.disclaimer-intro {
+  margin: 12px 0 22px;
+  color: #4e5a52;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.disclaimer-warning {
+  margin-bottom: 22px;
+  padding: 16px 18px;
+  color: #694d12;
+  background: #fff9df;
+  border: 1px solid #eadb9c;
+  border-radius: 11px;
+}
+
+.disclaimer-warning p {
+  margin: 5px 0 0;
+  line-height: 1.5;
+}
+
+.disclaimer-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  color: #28342c;
+  background: #f8faf7;
+  border: 1px solid #dfe4dc;
+  border-radius: 11px;
+  cursor: pointer;
+  line-height: 1.45;
+}
+
+.disclaimer-consent:has(input:checked) {
+  background: #edf6f0;
+  border-color: #8fb39d;
+}
+
+.disclaimer-consent input {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  flex: 0 0 auto;
+  margin: 1px 0 0;
+  accent-color: #2f6f4e;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
 .eyebrow {
   margin-bottom: 5px;
   color: #2f6f4e;
@@ -1074,6 +1156,15 @@ textarea {
 }
 
 @media (max-width: 680px) {
+  .disclaimer-page {
+    align-items: start;
+    padding: 18px 12px;
+  }
+
+  .disclaimer-card {
+    padding: 26px 22px;
+  }
+
   .app-version {
     display: none;
   }
