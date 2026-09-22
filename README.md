@@ -36,6 +36,10 @@ Startdataene inneholder fire ansatte og 80 supportsaker: 9 aktive og 71 lukkede.
 
 Demodataene dekker omtrent to år bakover fra tidspunktet siden åpnes. Tidspunktene er relative, slik at de ni aktive sakene alltid er aktuelle.
 
+De fiktive dataene viser økende saksmengde mot nåtid, en ekstra travel periode omtrent fire måneder tilbake og kortere behandlingstid i nyere saker. De 71 lukkede sakene er fordelt over 24 perioder på 31 dager, med 1–2 saker per periode lengst tilbake og 9 i den nyeste perioden. Den travle perioden har 8 saker og lengre behandlingstid. Velg de siste to årene i rapportfilteret for å se utviklingen i Excel-arket **Trender**, eller sammenlign eldre og nyere perioder i **Sammendrag**. Kalenderbaserte månedstall varierer med datoen demoen åpnes.
+
+Modellene har også ulike fiktive støttebehov: iPhone 13 har flest saker om dataoverføring og oppsett, Samsung Galaxy S23 om nettverk, Google Pixel 7 om apper og Lenovo ThinkPad T14 om e-post. Hver av disse modellene har også saker i andre kategorier. Systemproblemer på Doro Smartphone og skadevaresaker på HP Pavilion 15 har ekstra behandlingstid. Dette er konstruerte demomønstre, ikke faktiske produktdata. Filtrer rapporten på kategori og se arket **Enheter** for å sammenligne modellene; arket **Saker** viser kategori og behandlingstid per sak.
+
 ## Historikk og Excel-rapporter
 
 1. Åpne **Rapporter** og velg fra- og til-dato, eventuelt ansatt og kategori.
