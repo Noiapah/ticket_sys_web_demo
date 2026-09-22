@@ -181,7 +181,7 @@
           <p class="disclaimer-intro" id="disclaimer-description">Dette systemet lagrer ingen data utenfor den nåværende økten. Alle opplysninger og endringer forsvinner når siden lastes inn på nytt eller fanen lukkes.</p>
           <div class="disclaimer-warning" role="note">
             <strong>Dette er kun en demo.</strong>
-            <p>Ikke legg inn ekte kundeopplysninger, passord eller annen sensitiv informasjon.</p>
+            <p>Alle kundeopplysninger, passord eller informasjon er fiktive.</p>
           </div>
           <form data-form="disclaimer">
             <label class="disclaimer-consent">
