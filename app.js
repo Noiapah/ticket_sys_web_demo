@@ -91,6 +91,17 @@
   const checked = value => value ? ' checked' : ''
   const currentEmployee = () => state.employees.find(employee => employee.id === state.currentEmployeeId)
   const ticketById = id => state.tickets.find(ticket => ticket.id === Number(id))
+  function deviceMetadata(deviceModel) {
+    const model = deviceModel.trim().toLowerCase()
+    const known = source.tickets.find(ticket => ticket.deviceModel.toLowerCase() === model)
+    if (known) return { manufacturer: known.manufacturer, operatingSystem: known.operatingSystem }
+    if (model.startsWith('iphone')) return { manufacturer: 'Apple', operatingSystem: 'IOS' }
+    if (model.startsWith('samsung')) return { manufacturer: 'Samsung', operatingSystem: 'ANDROID' }
+    if (model.startsWith('google')) return { manufacturer: 'Google', operatingSystem: 'ANDROID' }
+    if (model.startsWith('doro')) return { manufacturer: 'Doro', operatingSystem: 'ANDROID' }
+    return { manufacturer: '', operatingSystem: 'OTHER' }
+  }
+
   const normalizePhone = value => {
     const digits = String(value).replace(/\D/g, '')
     return digits.length === 8 ? `+47${digits}` : digits.startsWith('47') ? `+${digits}` : digits
@@ -523,10 +534,9 @@
         customerPhone: String(data.customerPhone),
         customerPhoneNormalized: normalizePhone(data.customerPhone),
         deviceType: String(data.deviceType),
-        manufacturer: deviceModel.startsWith('iPhone') ? 'Apple' : deviceModel.startsWith('Samsung') ? 'Samsung' : deviceModel.startsWith('Google') ? 'Google' : '',
+        ...deviceMetadata(deviceModel),
         deviceModel,
         newDeviceModel: String(data.newDeviceModel || ''),
-        operatingSystem: deviceModel.startsWith('iPhone') ? 'IOS' : deviceModel.match(/Samsung|Google|Doro/) ? 'ANDROID' : 'OTHER',
         category: String(data.category),
         description: String(data.description),
         createdById: actor.id,
@@ -556,7 +566,9 @@
       ticket.customerName = String(data.customerName)
       ticket.customerPhone = String(data.customerPhone)
       ticket.customerPhoneNormalized = normalizePhone(data.customerPhone)
-      ticket.deviceModel = String(data.deviceModel)
+      const deviceModel = String(data.deviceModel)
+      if (deviceModel !== ticket.deviceModel) Object.assign(ticket, deviceMetadata(deviceModel))
+      ticket.deviceModel = deviceModel
       ticket.category = String(data.category)
       ticket.description = String(data.description)
       addHistory(ticket, state.currentEmployeeId, 'EDITED', 'Saksinformasjon oppdatert')

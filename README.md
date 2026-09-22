@@ -63,6 +63,7 @@ Opprettede saker telles etter opprettelsesdato, lukkede etter lukkedato. «Åpne
 | `mock-data.json` | Eksempeldata for ansatte, saker, kommentarer og historikk. |
 | `mock-data.js` | De samme eksempeldataene som `window.MOCK_DATA`, som appen laster også ved åpning via `file://`. |
 | `tests/report.test.cjs` | Tester for demodata, rapportfiltrering og Excel-eksport. |
+| `tests/ticket.test.cjs` | Tester for konsistente enhetsopplysninger ved oppretting og redigering av saker. |
 | `.github/workflows/deploy-pages.yml` | Publisering av de statiske filene til GitHub Pages. |
 
 Rediger filene direkte og last siden inn på nytt for å se endringene. Navigasjonen bruker URL-fragmenter som `#/`, `#/new`, `#/ticket/201`, `#/employees` og `#/reports`.
@@ -74,10 +75,10 @@ Hold `mock-data.json` og objektet i `mock-data.js` synkronisert når du endrer e
 Med Node.js installert kan du kjøre de eksisterende testene fra rotmappen, uten å installere pakker:
 
 ```sh
-node --test tests/report.test.cjs
+node --test
 ```
 
-Testene kontrollerer konsistens i demodataene, filtrering på lukkedato og ansatthandlinger, og Excel-eksport med fulle, filtrerte og tomme resultater.
+Testene kontrollerer konsistens i demodataene, filtrering på lukkedato og ansatthandlinger, Excel-eksport med fulle, filtrerte og tomme resultater, og at produsent og operativsystem følger enhetsmodellen ved oppretting og redigering.
 
 ## GitHub Pages
 
